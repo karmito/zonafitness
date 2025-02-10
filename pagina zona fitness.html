@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes de Suscripción</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #7ff554;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Fondo y estructura principal */
+    header {
+      background: url(fondo.jpg) no-repeat center center/cover; /* Cambia el link por el de tu fondo */
+      color: rgb(250, 252, 249);
+      text-align: center;
+      padding: 80px 0;
+      position: relative;
+    }
+
+    header .logo {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      height: 150px; /* Ajusta el tamaño del logo */
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    header p {
+      font-size: 18px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Estilo de los planes */
+    .plan-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 40px;
+    }
+
+    .plan {
+      width: 300px;
+      height: 350px;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .plan:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .plan h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .plan p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .precio {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #128C7E;
+      transform: translateY(-5px);
+    }
+
+    /* Efectos para el formulario */
+    .form-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-bottom: 50px;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #25D366;
+      color: white;
+      font-size: 18px;
+      border: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #128C7E;
+      transform: translateY(-5px);
+    }
+
+    /* Animación de fade-in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <img src="logo.png" alt="Logo del gimnasio" class="logo"> <!-- Cambia esto por tu logo -->
+    <h1>Bienvenido a Nuestros Planes de Suscripción</h1>
+    <p>Obtén el plan que se adapta a tus necesidades y mejora tu salud.</p>
+  </header>
+
+  <!-- Sección de Planes -->
+  <div class="plan-container">
+    <div class="plan">
+      <h3>PLAN VISITA</h3>
+      <p>Acceso al gimansio por 24horas</p>
+      <div class="precio">$50/dia</div>
+      <a href="https://wa.me/+529601121017?text=Hola,%20estoy%20interesado%20en%20el%20Plan%20visita.%20¿Cuál%20es%20el%20proceso?" class="btn" target="_blank">Suscribirse</a>
+    </div>
+
+    <div class="plan">
+      <h3>PLAN ESTUDIANTIL</h3>
+      <p>Acceso al gimnasio mensual</p>
+      <div class="precio">$399/mes</div>
+      <a href="https://wa.me/+529601121017?text=Hola,%20estoy%20interesado%20en%20el%20Plan%20estudiantil.%20¿Cuál%20es%20el%20proceso?" class="btn" target="_blank">Suscribirse</a>
+    </div>
+
+    <div class="plan">
+      <h3>PLAN MENSUAL</h3>
+      <p>acceso por mes</p>
+      <div class="precio">$499/mes</div>
+      <a href="https://wa.me/+529601121017?text=Hola,%20estoy%20interesado%20en%20el%20Plan%20mensual.%20¿Cuál%20es%20el%20proceso?" class="btn" target="_blank">Suscribirse</a>
+    </div>
+  </div>
+
+  <!-- Formulario de Suscripción -->
+  <div class="form-container">
+    <h2>Formulario de Suscripción</h2>
+    <form action="https://wa.me/+529601121017?text=" method="get" target="_blank">
+      <input type="text" name="nombre" placeholder="Tu Nombre" required>
+      <input type="email" name="email" placeholder="Tu Email" required>
+      <select name="plan" required>
+        <option value="basico">Plan VISITA</option>
+        <option value="premium">Plan ESTUDIANTIL</option>
+        <option value="profesional">Plan MENSUAL</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ZONA FITNESS NP - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
